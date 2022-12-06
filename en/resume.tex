@@ -1,0 +1,154 @@
+% Start a document with the here given default font size and paper size.
+\documentclass[10.5pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.5in]{geometry}
+
+% Setup the language.
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+\begin{document}  % begin the content of the document
+
+\maintitle{\HUGE Aleksander Lantsov,\\
+\Large{passionate software engineer in FinTech}}{}{Last update on \today}
+
+\begin{center}
+\spacedhrule{0.0em}{+0.2em}
+\href{mailto:lantsov.aleksander@gmail.com}{lantsov.aleksander\mbox{}@\mbox{}gmail.com}\sbull
+\href{https://t.me/lantsov_aleksander}{@lantsov\textunderscore aleksander}
+\sbull
+\href{http://www.linkedin.com/in/alantsov}{linkedin.com/in/alantsov}
+\spacedhrule{0.0em}{-1em}
+\end{center}
+\roottitle{}
+Software engineer with 8 years of experience in creating finance systems
+\\[2mm]
+\hfill
+Worked as lead developer in FinTech projects with significant market share (top-5 FX market-maker in the Moscow Exchange; responsible for 1.5\% of total trading volume in main crypto exchanges)
+\\[2mm]
+\hfill
+\textbf{Technical expertise:} Java, low-latency programming, hardware and software concurrency, system and application performance tuning, performance testing methodologies and tools
+\spacedhrule{1.0em}{0em}
+\roottitle{\LARGE{Experience}}
+
+\headedsection
+  {\href{https://spv-capital.com/}{SPV Capital}}
+  {\textsc{}} {%
+  \headedsubsection
+    {Senior Software Engineer}
+    {Jun 2022 --  present}
+    \smallskip
+    {\bodytext{
+    Development of HFT market-making system working with the biggest crypto exchanges (makes 1.5\% of total trading volume, monthly turnover exceeds \$3 billion)
+    \\
+    {\bf Achievements:}
+    \begin{itemize}
+    \item created a new component for reducing data feed latency using dynamic analysis of existing network connections; reduced latency percentiles by 1.6 times
+    \item
+    redesign of existing system architecture, reduced number of used servers by 40\%
+    \item \href{https://github.com/reactor/reactor-core/pull/3168}{found and fixed} performance issue in the Project Reactor -  popular reactive Java framework \end{itemize}
+    {{\bf Technologies: } Java 17, Spring, Project Reactor, Aeron, Agrona, SBE, Netty, OkHttp, Kafka, Clickhouse, Prometeus, Grafana}
+    }
+    }}
+
+\headedsection
+  {\href{https://www.citigroup.com/citi/}{Citi}}
+  {\textsc{}}  {%
+  \headedsubsection
+    {Senior Software Engineer, Vice President}
+    {Jan 2022 - Jun 2022}
+    \smallskip
+    {\bodytext{
+        Development of internal Fx Platform for algorithmic execution in OTC market
+    }
+    }
+    }
+
+\headedsection
+  {\href{https://www.raiffeisen.ru/}{Raiffeisen Bank Russia}}
+  {\textsc{}} {%
+  \headedsubsection
+    {Senior Software Engineer}
+    {Jun 2018 --  Jan 2022}
+    \smallskip
+    {\bodytext{
+    Design and create services for electronic trading FX desk, one of the major participants in Russia (top-5 FX-maker in Moscow Exchange). Was responsible for the technological development of the platform overall.\\
+    {\bf Achievements:}
+    \begin{itemize}
+    \item extend and reconstruct the system to be operational 24/7 without downtime
+    \item created a new bank service with personalized quoting prices for clients and integrate it with existing services
+    \item conducted more than 50 interviews and organized several educational meetups to improve tech skills of the team
+    \item introduced smart self-diagnostic to eliminate incidents on production
+    \end{itemize}
+    {{\bf Technologies: } Java, LMAX Disruptor, Azul Zing, Aeron, SBE, Kafka, Clickhouse, Chronicle Software, Spring, FIX, async-profiler, C++, Prometeus, Grafana}
+    }
+    }}
+
+\headedsection
+  {\href{https://www.db.com}{Deutsche Bank}}
+  {\textsc{}} {%
+  \headedsubsection
+    {Software Engineer}
+    {Nov 2014 --  Jun 2018}
+    \smallskip
+    {\bodytext {Developing electronic trading platform of Rates \& Credit financial instruments and derivatives.}}}
+
+\smallskip
+
+
+\headedsection
+  {\href{http://www.jet.msk.su/}{Jet Infosystems}}
+  {\textsc{}}  {%
+  \headedsubsection
+    {Junior Software Engineer}
+    {Jun 2014 - Nov 2014}
+    \smallskip
+    {\bodytext {Developing web-services on the Java EE platform. Resolving problems with performance.}}}
+
+\smallskip
+\headedsection
+  {\href{http://www.parallels.com}{Parallels}}
+  {\textsc{}} {%
+  \headedsubsection
+    {Research assistant}
+    {Sep 2012 -- Jun 2014}
+    \smallskip
+    {\bodytext{R\&D emulator of systems based on ARM architecture. Research in perspective for the project areas.}}
+    }
+\spacedhrule{0em}{0em}
+
+\roottitle{\LARGE{Education}}
+\headedsection
+  {\href{http://mipt.ru/}{Moscow Institute of Physics and Technology}}
+  {\textsc{}}  {%
+  \headedsubsection
+    {Master degree, Applied Physics and Mathematics}
+    {2013 - 2015}
+    \smallskip
+    }
+
+\headedsection
+  {\href{http://mipt.ru/}{Moscow Institute of Physics and Technology
+}}
+  {\textsc{}}  {%
+  \headedsubsection
+    {Bachelor degree, Applied Physics and Mathematics}
+    {2009 - 2013}
+    \smallskip
+    }
+
+\headedsection
+  {\href{https://iqf.hse.ru/cmf}{Higher School of Economics – Center of Mathematical Finance}}
+  {\textsc{}}  {%
+  \headedsubsection
+    {Additional education, Quantitative Analytic}
+    {2021}
+    \smallskip
+    }
+\end{document}

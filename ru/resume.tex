@@ -1,0 +1,175 @@
+% Start a document with the here given default font size and paper size.
+\documentclass[12pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.5in]{geometry}
+
+% Setup the language.
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+\hyphenpenalty=10000
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+\maintitle{\HUGE{Александр Ланцов,}\\\LARGE{разработчик в финтехе}}{}{Обновлено \today}
+
+\begin{center}
+\spacedhrule{0.0em}{+0.2em}
+\href{mailto:lantsov.aleksander@gmail.com}{lantsov.aleksander\mbox{}@\mbox{}gmail.com}\sbull
+\href{https://t.me/lantsov_aleksander}{@lantsov\textunderscore aleksander}
+\sbull
+\href{http://www.linkedin.com/in/alantsov}{linkedin.com/in/alantsov}
+\spacedhrule{0.0em}{-1.5em}
+\end{center}
+\roottitle{}
+Восемь лет опыта в разработке трейдинговых и финансовых систем
+\\[2mm]
+\hfill
+Выступал в качестве ведущего разработчика в финтех-проектах, занимающих существенную долю рынка: топ-5 по оборотам в валютной секции Московской биржи; до 1.5\% всего дневного объема на крупнейших криптовалютных биржах
+\\[2mm]
+\hfill
+{\bf Основные области экспертизы:} Java, low-latency, многопоточное и конкурентное программирование, профилирование, тестирование и улучшение производительности приложений\hfill
+\spacedhrule{0.4em}{-1em}
+\roottitle{\LARGE{Опыт работы}}
+
+\headedsection
+  {\href{https://spv-capital.com/}{SPV Capital}}
+  {\textsc{}} {%
+  \headedsubsection
+    {Senior Software Engineer}
+    {Июнь 2022 --  по настоящее время}
+    \smallskip
+    {\bodytext{\small
+    Разработка HFT-системы для алгоритмического market-making`a на крупнейших криптовалютных биржах (генерирует до 1.5\% от всего объема торгов, оборот - более 3 млрд. \$ ежемесячно)
+
+    {\bf Ключевые результаты:}
+    \begin{itemize}
+    \item создание компонента для ускорения получения данных с бирж путем динамического анализа и ребалансировки существующих подключений к торговым площадкам. Снизил задержки получения/отправки данных по сети в 1.6 раз
+    \item анализ и переработка распределенной архитектуры системы, что позволило сократить количество используемых серверов на 40\%
+    \item \href{https://github.com/reactor/reactor-core/pull/3168}{нашел и исправил проблему} с производительностью в Project Reactor -  широко используемом реактивном Java-фреймворке \end{itemize}
+    {\bf Технологии:} Java 17, Spring, Project Reactor, Aeron, Agrona, SBE, Netty, OkHttp, Kafka, Clickhouse, Prometeus, Grafana}
+    }}
+
+\smallskip
+
+\headedsection
+  {\href{https://www.citigroup.com/citi/}{Citi}}
+  {\textsc{}}  {%
+  \headedsubsection
+    {Senior Software Engineer, Vice President}
+    {Январь 2022 - Июнь 2022}
+    \smallskip{
+     \bodytext{\small
+    Разработка алготрейдинговой платформы для OTC-торговли на валютном рынке}
+    }}
+
+\smallskip
+
+\headedsection
+  {\href{https://www.raiffeisen.ru/}{Raiffeisen Bank Russia}}
+  {\textsc{}} {%
+  \headedsubsection
+    {Senior Software Engineer}
+    {Июнь 2018 --  Январь 2022}
+    \smallskip
+    {\bodytext{\smallРазработка сервисов для электронной торговли на валютном рынке, система является одним из ключевых игроков в РФ (входит в топ-5 по объемам торгов на Мосбирже). Отвечал за технологическое развитие платформы.\\
+    {\bf Ключевые результаты:}
+    \begin{itemize}
+    \item переработал систему для возможности её работы и торговли 24/7, без праздников и выходных
+    \item создал с нуля подсистему для расчета индивидуального курса с крупнейшими корпоративными и финансовыми учреждениями (500к+ сделок за год), проинтегрировал её в существующие сервисы банка
+    \item найм и развитие команды - провел больше 50-ти собеседований, провел несколько образовательных встреч для повышения уровня команды
+    \item придумал и внедрил компоненты самодиагностики системы - в результате количество серьезных инцидентов снизилось практически до нуля
+    \end{itemize}
+    {\bf Технологии:} Java, LMAX Disruptor, Azul Zing, Aeron, SBE, Kafka, Clickhouse, Chronicle Software, Spring, FIX, async-profiler, C++, Prometeus, Grafana}
+    }}
+
+\newpage
+
+\headedsection
+  {\href{https://www.db.com}{Deutsche Bank}}
+  {\textsc{}} {%
+  \headedsubsection
+    {Software Engineer}
+    {Ноябрь 2014 --  Июнь 2018}
+    \smallskip
+    {\bodytext{\smallРазработка и развитие внутренней платформы банка, позволяющей заключать сделки с контрагентами. Платформа предоставляет обновляемый поток котировок (десятки обновлений в секунду) по тысячам стандартных финансовых инструментов, а так же отвечает на RFQ-запросы по ним и инструментам с нестандартными экономическими параметрами. Торговля может производиться в полностью автоматическом режиме, а также с привлечением трейдеров.\\
+    {\bf Ключевые результаты:}
+    \begin{itemize}
+    \item дизайн и создание подсистемы прайсинга для быстрой поддержки новых валют
+    \item создание инфраструктуры для автоматизированного нагрузочного тестирования и сбора метрик
+    \item участие в расследовании и ликвидации инцидентов в рабочем окружении
+    \end{itemize}
+    {\bf Технологии:} Java, Spring, Guava, Spock, Linux, bash, Git}
+
+    }}
+
+\smallskip
+
+
+\headedsection
+  {\href{http://www.jet.msk.su/}{Jet Infosystems}}
+  {\textsc{}}  {%
+  \headedsubsection
+    {Junior Software Engineer}
+    {Июнь 2014 - Ноябрь 2014}
+    \smallskip
+    {\bodytext{Разработка веб-сервисов на платформе Java EE, функциональное и нагрузочное тестирование}
+    }}
+
+\smallskip
+\headedsection
+  {\href{http://www.parallels.com}{Parallels}}
+  {\textsc{}} {%
+  \headedsubsection
+    {Research assistant}
+    {Сентябрь 2012 -- Июнь 2014}
+    \smallskip
+    {\bodytext{Исследования алгоритмов принятия консенсуса в сети ненадежных вычислителей
+    }}
+    }
+\spacedhrule{0em}{-1em}
+
+\roottitle{\LARGE{Образование}}
+\headedsection
+  {\href{http://mipt.ru/}{Московский физико-технический институт}}
+  {\textsc{}}  {%
+  \headedsubsection
+    {магистр, факультет управления и прикладной математики}
+    {2013 - 2015}
+    \smallskip
+    }
+
+\headedsection
+  {\href{http://mipt.ru/}{Московский физико-технический институт}}
+  {\textsc{}}  {%
+  \headedsubsection
+    {бакалавр, факультет управления и прикладной математики}
+    {2009 - 2013}
+    \smallskip
+    }
+
+\headedsection
+  {\href{https://iqf.hse.ru/cmf}{Высшая школа экономики}}
+  {\textsc{}}  {%
+  \headedsubsection
+    {программа <<Количественная аналитика>>,\\ Центр Математических Финансов}
+    {2021}
+    \smallskip
+    }
+
+
+\spacedhrule{0em}{-1em}
+
+\roottitle{\LARGE{Публичная деятельность}}
+  Подкаст по особенностям Java-разработки в финтехе: {\href{https://t.me/javaswag/1053}{https://t.me/javaswag/1053}}
+  \\
+  Интервью про алгоритмическую торговлю простыми словами: {\href{https://youtu.be/MU4OcFI3vok}{https://youtu.be/MU4OcFI3vok}}
+
+
+\end{document}
